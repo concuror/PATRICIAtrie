@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E0F6724153AFA8300A6FFF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0F6723153AFA8300A6FFF1 /* Cocoa.framework */; };
+		9E0F672E153AFA8300A6FFF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F672C153AFA8300A6FFF1 /* InfoPlist.strings */; };
+		9E0F6730153AFA8300A6FFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F672F153AFA8300A6FFF1 /* main.m */; };
+		9E0F6734153AFA8300A6FFF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F6732153AFA8300A6FFF1 /* Credits.rtf */; };
+		9E0F6737153AFA8300A6FFF1 /* ATPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F6736153AFA8300A6FFF1 /* ATPAppDelegate.m */; };
+		9E0F673A153AFA8300A6FFF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F6738153AFA8300A6FFF1 /* MainMenu.xib */; };
+		9E31BAB8153B13AF0085A2E6 /* ATDPNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E31BAB5153B13AF0085A2E6 /* ATDPNode.m */; };
+		9E31BAB9153B13AF0085A2E6 /* ATDPTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E31BAB7153B13AF0085A2E6 /* ATDPTrie.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E0F671F153AFA8300A6FFF1 /* PATRICIAtrie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PATRICIAtrie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0F6723153AFA8300A6FFF1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9E0F6726153AFA8300A6FFF1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9E0F6727153AFA8300A6FFF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9E0F6728153AFA8300A6FFF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E0F672B153AFA8300A6FFF1 /* PATRICIAtrie-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PATRICIAtrie-Info.plist"; sourceTree = "<group>"; };
+		9E0F672D153AFA8300A6FFF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E0F672F153AFA8300A6FFF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E0F6731153AFA8300A6FFF1 /* PATRICIAtrie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PATRICIAtrie-Prefix.pch"; sourceTree = "<group>"; };
+		9E0F6733153AFA8300A6FFF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9E0F6735153AFA8300A6FFF1 /* ATPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPAppDelegate.h; sourceTree = "<group>"; };
+		9E0F6736153AFA8300A6FFF1 /* ATPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPAppDelegate.m; sourceTree = "<group>"; };
+		9E0F6739153AFA8300A6FFF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9E31BAB4153B13AF0085A2E6 /* ATDPNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDPNode.h; sourceTree = "<group>"; };
+		9E31BAB5153B13AF0085A2E6 /* ATDPNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDPNode.m; sourceTree = "<group>"; };
+		9E31BAB6153B13AF0085A2E6 /* ATDPTrie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDPTrie.h; sourceTree = "<group>"; };
+		9E31BAB7153B13AF0085A2E6 /* ATDPTrie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDPTrie.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E0F671C153AFA8300A6FFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0F6724153AFA8300A6FFF1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E0F6714153AFA8300A6FFF1 = {
+			isa = PBXGroup;
+			children = (
+				9E0F6729153AFA8300A6FFF1 /* PATRICIAtrie */,
+				9E0F6722153AFA8300A6FFF1 /* Frameworks */,
+				9E0F6720153AFA8300A6FFF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E0F6720153AFA8300A6FFF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F671F153AFA8300A6FFF1 /* PATRICIAtrie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E0F6722153AFA8300A6FFF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F6723153AFA8300A6FFF1 /* Cocoa.framework */,
+				9E0F6725153AFA8300A6FFF1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E0F6725153AFA8300A6FFF1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F6726153AFA8300A6FFF1 /* AppKit.framework */,
+				9E0F6727153AFA8300A6FFF1 /* CoreData.framework */,
+				9E0F6728153AFA8300A6FFF1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9E0F6729153AFA8300A6FFF1 /* PATRICIAtrie */ = {
+			isa = PBXGroup;
+			children = (
+				9E31BAB3153B13AF0085A2E6 /* ATDPTrie */,
+				9E0F6735153AFA8300A6FFF1 /* ATPAppDelegate.h */,
+				9E0F6736153AFA8300A6FFF1 /* ATPAppDelegate.m */,
+				9E0F6738153AFA8300A6FFF1 /* MainMenu.xib */,
+				9E0F672A153AFA8300A6FFF1 /* Supporting Files */,
+			);
+			path = PATRICIAtrie;
+			sourceTree = "<group>";
+		};
+		9E0F672A153AFA8300A6FFF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F672B153AFA8300A6FFF1 /* PATRICIAtrie-Info.plist */,
+				9E0F672C153AFA8300A6FFF1 /* InfoPlist.strings */,
+				9E0F672F153AFA8300A6FFF1 /* main.m */,
+				9E0F6731153AFA8300A6FFF1 /* PATRICIAtrie-Prefix.pch */,
+				9E0F6732153AFA8300A6FFF1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E31BAB3153B13AF0085A2E6 /* ATDPTrie */ = {
+			isa = PBXGroup;
+			children = (
+				9E31BAB4153B13AF0085A2E6 /* ATDPNode.h */,
+				9E31BAB5153B13AF0085A2E6 /* ATDPNode.m */,
+				9E31BAB6153B13AF0085A2E6 /* ATDPTrie.h */,
+				9E31BAB7153B13AF0085A2E6 /* ATDPTrie.m */,
+			);
+			path = ATDPTrie;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E0F671E153AFA8300A6FFF1 /* PATRICIAtrie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0F673D153AFA8300A6FFF1 /* Build configuration list for PBXNativeTarget "PATRICIAtrie" */;
+			buildPhases = (
+				9E0F671B153AFA8300A6FFF1 /* Sources */,
+				9E0F671C153AFA8300A6FFF1 /* Frameworks */,
+				9E0F671D153AFA8300A6FFF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PATRICIAtrie;
+			productName = PATRICIAtrie;
+			productReference = 9E0F671F153AFA8300A6FFF1 /* PATRICIAtrie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E0F6716153AFA8300A6FFF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ATP;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9E0F6719153AFA8300A6FFF1 /* Build configuration list for PBXProject "PATRICIAtrie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E0F6714153AFA8300A6FFF1;
+			productRefGroup = 9E0F6720153AFA8300A6FFF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E0F671E153AFA8300A6FFF1 /* PATRICIAtrie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E0F671D153AFA8300A6FFF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0F672E153AFA8300A6FFF1 /* InfoPlist.strings in Resources */,
+				9E0F6734153AFA8300A6FFF1 /* Credits.rtf in Resources */,
+				9E0F673A153AFA8300A6FFF1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E0F671B153AFA8300A6FFF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0F6730153AFA8300A6FFF1 /* main.m in Sources */,
+				9E0F6737153AFA8300A6FFF1 /* ATPAppDelegate.m in Sources */,
+				9E31BAB8153B13AF0085A2E6 /* ATDPNode.m in Sources */,
+				9E31BAB9153B13AF0085A2E6 /* ATDPTrie.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E0F672C153AFA8300A6FFF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0F672D153AFA8300A6FFF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E0F6732153AFA8300A6FFF1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0F6733153AFA8300A6FFF1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9E0F6738153AFA8300A6FFF1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0F6739153AFA8300A6FFF1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E0F673B153AFA8300A6FFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9E0F673C153AFA8300A6FFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9E0F673E153AFA8300A6FFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PATRICIAtrie/PATRICIAtrie-Prefix.pch";
+				INFOPLIST_FILE = "PATRICIAtrie/PATRICIAtrie-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E0F673F153AFA8300A6FFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PATRICIAtrie/PATRICIAtrie-Prefix.pch";
+				INFOPLIST_FILE = "PATRICIAtrie/PATRICIAtrie-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E0F6719153AFA8300A6FFF1 /* Build configuration list for PBXProject "PATRICIAtrie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0F673B153AFA8300A6FFF1 /* Debug */,
+				9E0F673C153AFA8300A6FFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E0F673D153AFA8300A6FFF1 /* Build configuration list for PBXNativeTarget "PATRICIAtrie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0F673E153AFA8300A6FFF1 /* Debug */,
+				9E0F673F153AFA8300A6FFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E0F6716153AFA8300A6FFF1 /* Project object */;
+}
