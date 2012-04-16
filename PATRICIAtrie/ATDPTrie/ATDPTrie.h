@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class ATDPNode;
 
-@interface ATDPTrie : NSObject {
+@interface ATDPTrie : NSObject <NSCoding> {
     
     ATDPNode *_root;
     
@@ -24,5 +24,9 @@
 -(BOOL)lookupWord:(NSString *)word;
 
 -(void) deleteWord:(NSString *)label;
+
+-(void) saveTrieToFile:(NSString *)fileName;
+
+-(void) loadFromFile:(NSString *)fileName;
 
 @end

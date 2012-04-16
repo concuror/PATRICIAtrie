@@ -27,4 +27,8 @@
 
 -(IBAction)lookUpWord:(id)sender;
 
+-(IBAction)saveTrie:(id)sender;
+
+-(IBAction)loadTrie:(id)sender;
+
 @end

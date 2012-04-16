@@ -3,7 +3,7 @@
 //  PATRICIAtrie
 //
 //  Created by Andrii Titov on 4/15/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 home. All rights reserved.
 //
 
 #import "ATPAppDelegate.h"
@@ -44,6 +44,23 @@
         value = @"NO";
     }
     self.label.stringValue = value;
+}
+
+-(IBAction)saveTrie:(id)sender {
+    NSSavePanel *saveDlg =[NSSavePanel savePanel];
+    saveDlg.canCreateDirectories = YES;
+    if ([saveDlg runModal] == NSOKButton) {
+        [trieTester saveTrieToFile:[[saveDlg URL] path]];
+    }
+}
+
+-(IBAction)loadTrie:(id)sender {
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    openPanel.canChooseDirectories = NO;
+    openPanel.canChooseFiles = YES;
+    if ([openPanel runModal] == NSOKButton) {
+        [trieTester loadFromFile:[[openPanel URL] path]];
+    }
 }
 
 @end

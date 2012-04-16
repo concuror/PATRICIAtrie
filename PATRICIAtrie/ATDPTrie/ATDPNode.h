@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ATDPNode : NSObject {
+@interface ATDPNode : NSObject<NSCoding> {
     
     NSString *label;
     
