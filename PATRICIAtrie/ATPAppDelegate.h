@@ -7,9 +7,24 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class ATDPTrie;
 
-@interface ATPAppDelegate : NSObject <NSApplicationDelegate>
+@interface ATPAppDelegate : NSObject <NSApplicationDelegate> {
+    
+    ATDPTrie *trieTester;
+    
+}
+
+@property (assign) IBOutlet NSTextField *textField;
+
+@property (assign) IBOutlet NSTextField *label;
 
 @property (assign) IBOutlet NSWindow *window;
+
+-(IBAction)addWord:(id)sender;
+
+-(IBAction)deleteWord:(id)sender;
+
+-(IBAction)lookUpWord:(id)sender;
 
 @end
