@@ -51,6 +51,9 @@
         }
         if ( ! inserted ) {
             ATDPNode *tempNode = [[ATDPNode alloc] initWithLabel:newWordPart];
+            [curNode.subNodes indexOfObject:tempNode inSortedRange:NSMakeRange(0, curNode.subNodes.count) options:NSBinarySearchingInsertionIndex usingComparator:^NSComparisonResult(ATDPNode *node1, ATDPNode *node2) {
+                return [node1.label compare:node2.label];
+            }];
             [curNode.subNodes addObject:tempNode];
             [tempNode release];
         }
@@ -62,8 +65,16 @@
         NSString *newLabel1 = [wordPart substringFromIndex:matches];
         NSString *newLabel2 = [curNode.label substringFromIndex:matches];
         curNode.label = [curNode.label substringToIndex:matches];
-        ATDPNode *sibling1 = [[ATDPNode alloc] initWithLabel:newLabel1];
-        ATDPNode *sibling2 = [[ATDPNode alloc] initWithLabel:newLabel2];
+        ATDPNode *sibling1;
+        ATDPNode *sibling2;
+        if ([newLabel1 compare:newLabel2] == NSOrderedAscending) {
+            sibling1 = [[ATDPNode alloc] initWithLabel:newLabel1];
+            sibling2 = [[ATDPNode alloc] initWithLabel:newLabel2];
+        }
+        else {
+            sibling1 = [[ATDPNode alloc] initWithLabel:newLabel2];
+            sibling2 = [[ATDPNode alloc] initWithLabel:newLabel1];
+        }
         sibling2.subNodes = curNode.subNodes;
         curNode.subNodes = [[NSMutableArray alloc] initWithObjects:sibling1,sibling2, nil];
         [sibling1 release];

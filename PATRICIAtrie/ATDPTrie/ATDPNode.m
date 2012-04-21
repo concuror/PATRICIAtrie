@@ -44,6 +44,10 @@
     return self;
 }
 
+-(NSComparisonResult) compare:(ATDPNode *)theNode {
+    return [self.label compare:theNode.label];
+}
+
 -(void) dealloc {
     self.label = nil;
     [subNodes release];
